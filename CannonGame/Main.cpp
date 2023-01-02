@@ -6,11 +6,14 @@
  */
 
 
-#include <iostream>
+
+#include "Game.h"
 
 
 int main()
 {
-	std::cout << "Hello" << std::endl;
+
+	Game game;
+	game.run();
 	return 0;
 }
