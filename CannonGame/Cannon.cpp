@@ -88,8 +88,6 @@ void Cannon::debugDump()
     std::cout << "BarrelSprite Position x: " << m_barrelSprite.getPosition().x << " y: "<< m_barrelSprite.getPosition().y << "\n";
     std::cout << "BarrelSprite GBounds x: " <<  m_barrelSprite.getGlobalBounds().left << " y: " << m_barrelSprite.getGlobalBounds().top<< "\n";
     std::cout << "State" << static_cast<int>(m_state) << "\n";
-
-
     std::cout << std::endl;
 }
 

@@ -2,7 +2,7 @@
 
 Projectile::Projectile()
 {
-    int ballRadius = 10;
+    float ballRadius = 10.0f;
     m_ball.setRadius(ballRadius);
     m_ball.setOrigin(ballRadius, ballRadius);
     m_ball.setFillColor(sf::Color::Cyan);

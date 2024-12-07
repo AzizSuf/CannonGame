@@ -104,7 +104,7 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Programming\C++\VSProjects\MathematicalAndComputerModeling_Project1\MathematicalAndComputerModeling_Project1;$(SolutionDir)Libs\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libs\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -121,7 +121,7 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Programming\C++\VSProjects\MathematicalAndComputerModeling_Project1\MathematicalAndComputerModeling_Project1;$(SolutionDir)Libs\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Libs\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -133,7 +133,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\MathematicalAndComputerModeling_Project1\MathematicalAndComputerModeling_Project1\ThrowPhysics.cpp" />
     <ClCompile Include="Barrel.cpp" />
     <ClCompile Include="Box.cpp" />
     <ClCompile Include="Cannon.cpp" />
@@ -142,10 +141,10 @@
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="Projectile.cpp" />
     <ClCompile Include="ResourceHolder.cpp" />
+    <ClCompile Include="ThrowPhysics.cpp" />
     <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\MathematicalAndComputerModeling_Project1\MathematicalAndComputerModeling_Project1\ThrowPhysics.h" />
     <ClInclude Include="Barrel.h" />
     <ClInclude Include="Box.h" />
     <ClInclude Include="Cannon.h" />
@@ -153,10 +152,8 @@
     <ClInclude Include="MainMenu.h" />
     <ClInclude Include="Projectile.h" />
     <ClInclude Include="ResourceHolder.h" />
+    <ClInclude Include="ThrowPhysics.h" />
     <ClInclude Include="utils.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="FireShader.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

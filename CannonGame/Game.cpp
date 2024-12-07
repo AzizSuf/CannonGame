@@ -31,12 +31,6 @@ Game::Game() :
 		std::cerr << "Shader are not available" << std::endl;
 	}
 
-	// load only the fragment shader
-	if (!m_fireShader.loadFromFile("FireShader.cc", sf::Shader::Fragment))
-	{
-		std::cerr << "Couldn't load fragment shader\n";
-	}
-
 	// Set the resolution parameter (the resoltion is divided to make the fire smaller)
 	m_fireShader.setParameter("resolution", sf::Vector2f(1280 / 2, 720 / 2));
 
@@ -54,7 +48,6 @@ Game::Game() :
 	Box box;
 
 	m_boxes.push_back(box);
-
 }
 
 void Game::run()
@@ -195,10 +188,6 @@ void Game::update()
 
 void Game::render()
 {
-	// Set shaders parameters
-	// Set the others parameters who need to be updated every frames
-	m_fireShader.setParameter("time", m_shaderClock.getElapsedTime().asSeconds());
-
 	sf::Vector2i mousePos = sf::Mouse::getPosition(m_window);
 	m_fireShader.setParameter("mouse", sf::Vector2f(mousePos.x, mousePos.y - 720 / 2));
 
@@ -220,7 +209,6 @@ void Game::render()
 
 	m_window.draw(m_mainMenu);
 	m_window.draw(m_scoreText);
-	//m_window.draw(m_fireSprite, &m_fireShader);
 	m_window.display();
 }
 
